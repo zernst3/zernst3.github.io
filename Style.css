@@ -1,0 +1,166 @@
+body, html {
+    height: 100%;
+    font-family: 'Baloo Bhaina 2', Regular;
+    background-image: url("Images/gradient image.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+#top-image {
+    max-height: 70vh;
+    max-width: 100%;
+    border-radius: 5%;
+    border: 3px solid #ddd;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#page_title {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 70px;
+    font-family: 'Londrina Solid', Regular;
+}
+
+#my_name {
+    color: tomato;
+    font-size: 80px;
+}
+
+#Titlename
+{
+    color: #000000;
+    opacity: 1;
+    font-weight: bold;
+    font-size: 1.2rem;  
+}
+
+hr {
+    width: 80%;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to left, rgba(117, 117, 117, 0), rgba(117, 117, 117, 0.75), rgba(117, 117, 117, 0));
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.card {
+    border: 2px solid gray;
+    padding: 2px;
+    background-color: transparent;
+}
+
+.card-body {
+    background-image: url("Images/gradient_gray.jpg");
+}
+
+.card-title, .card-text {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.hover {
+    text-decoration: none; 
+}
+
+#Rights-text {
+    color:black;
+}
+
+#Section_Title {
+    text-align: center;
+    color: white;
+}
+
+.full_height {
+    height: 100vh;
+}
+
+.page_title {
+    height: 100vh;
+}
+
+@media (max-height: 1010px)
+{
+    .full_height {
+        height: 55rem;
+    }
+
+    .page_title {
+        height: 100vh;
+    }
+}
+
+.inner_centered {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);    
+}
+
+#About_Me_Paragraph {
+    max-height: 50%;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid gray;
+    padding: 20px;
+    width: auto;
+}
+
+#my-image {
+    max-width: 80%;
+    max-height: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+@media (max-height: 850px) {
+    #my-image {
+        display: none;
+    }
+}
+
+#contact-div {
+    color: white;
+}
+
+.page_width {
+    max-width: 80%;
+    margin: auto;
+}
+
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+  }
+  
+.zoom:hover {
+    transform: scale(1.1);
+    z-index:1;
+}
+
+#thank_you {
+    color: white;
+}
+
+#presentation {
+    color: red;
+    font-weight: bold;
+}
+
+#email {
+    color: white;
+}
