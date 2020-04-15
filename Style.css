@@ -1,7 +1,8 @@
+
 body, html {
     height: 100%;
     font-family: 'Baloo Bhaina 2', Regular;
-    background-image: url("Images/gradient image.jpg");
+    background-image: url("https://images.unsplash.com/photo-1508615121316-fe792af62a63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -59,7 +60,7 @@ hr {
 }
 
 .card-body {
-    background-image: url("Images/gradient_gray.jpg");
+    background-image: url("https://images.unsplash.com/photo-1466182068299-f8c81cf74f40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
 }
 
 .card-title, .card-text {
@@ -76,7 +77,7 @@ a.hover {
     color:black;
 }
 
-#Section_Title {
+.Section_Title {
     text-align: center;
     color: white;
 }
@@ -134,6 +135,15 @@ a.hover {
 }
 
 #contact-div {
+    color: black;
+}
+
+.form-control {
+    background-color: transparent;
+    background: transparent;
+    border: 2px solid rgb(100, 100, 100);
+    outline: none;
+    text-align: center;
     color: white;
 }
 

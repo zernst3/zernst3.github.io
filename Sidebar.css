@@ -1,3 +1,14 @@
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
 .vertical-nav {
     min-width: 17rem;
     width: 17rem;
@@ -11,32 +22,48 @@
     z-index:1;
 }
 
-.vertical-nav-mobile {
-  min-width: 17rem;
-  width: 17rem;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s;
-  background:rgba(104, 104, 104, 0.9);
-  z-index:1;
-}  
+.nav-link {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  height: 5rem;
+  margin: auto;
+  top: 50%;
+  background: transparent;
+}
 
-  @media screen and (min-height: 721px) {
-    .vertical-nav-mobile {
-      display: none;
-    }
+#sidebarCollapse.active {
+  width: 100%;
+  margin: 0;
+  transition: all 0.4s;
+}
+
+#sidebarCollapse {
+  width: 100%;
+  margin: 0;
+  transition: all 0.4s;
+  background-color: rgb(230, 230, 230);
+  padding: 1rem;
+}
+
+#sidebartoggle {
+  position: fixed;
+  padding: 1rem;
+  z-index:1;
   }
 
   @media screen and (max-height: 720px){
-  .vertical-nav {
-    display: none;
+    .nav-link {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      height: 3rem;
+      margin: auto;
+      top: 50%;
+      background: transparent;
   }
+}
 
   @media screen and (max-height: 555px) {
-    .vertical-nav-mobile {
+    .vertical-nav {
       display: none;
     }
 
@@ -45,86 +72,38 @@
     }
   }
 
-  #content {
-    width: 100%;
-    margin: 0;
-  }
-
-  .vertical-nav-mobile .nav-link {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    height: 3rem;
-    margin: auto;
-    top: 50%;
-    background: transparent;
-}
-}
-
   #sidebar.active {
     margin-left: -17rem;
   }
   
-  #content.active {
-    width: 100%;
-    margin: 0;
-  }
-  
   @media (max-width: 768px) {
-    #sidebar {
-      margin-left: -17rem;
-    }
-    #sidebar.active {
-      margin-left: 0;
-    }
+ 
     #content {
       width: 100%;
       margin: 0;
     }
 
-    #sidebarCollapse.active {
+    .vertical-nav {
+      width: 17rem;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s;
+      background:rgba(104, 104, 104, 0.9);
+      z-index:1;
+    }
+    
+    #sidebarCollapse {
       width: calc(100% - 17rem);
       margin-left: 17rem;
       transition: all 0.4s;
+      background-color: rgb(230, 230, 230);
+      padding: 1rem;
     }
-
-    #sidebarCollapse {
-      width: 100%;
-      margin: 0;
-      transition: all 0.4s;
-    }
-  }    
-
-#sidebartoggle {
-position: fixed;
-padding: 1rem;
-z-index:1;
-}
-
-#sidebarCollapse {
-    background-color: rgb(230, 230, 230);
-    padding: 1rem;
-}
-
-.nav-link {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    height: 5rem;
-    margin: auto;
-    top: 50%;
-    background: transparent;
-}
-
+  }  
+  
 .nav-item {
     background: transparent;
-}
-
-.page-content {
-  width: calc(100% - 17rem);
-  margin-left: 17rem;
-  transition: all 0.4s;
-}
-
-#content.active {
-  width: 100%;
-  margin: 0;
 }

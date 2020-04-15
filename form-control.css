@@ -34,3 +34,8 @@ form .submit {
 form .submit:hover {
     transform: scale(1.1);
 }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white !important; 
+    opacity: 1 !important; /* Firefox */
+  }
